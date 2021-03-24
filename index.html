@@ -2,18 +2,108 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Пример страницы #2</title>
+    <title>Лаби</title>
     <style>
-        font {color: bisque}
-        p {color:  blue;}
+        body, h2, p{
+            margin:0;
+            padding:0;
+        }
+        body{
+            font-size: 21px;
+        }
+        #header{
+            background-color: #ccc;
+        }
+        #upperbar{
+            background-color: #bbb;
+            float: top;
+            width: 1920px;
+        }
+        ul.navup{
+            margin-left: 0px;
+            padding-left: 0px;
+            list-style: none;
+        }
+        .navup li {
+            display: inline;
+        }
+        ul.navup a {
+            display: inline-block;
+            width: 5em;
+            padding:10px;
+            background-color: #f4f4f4;
+            border: 1px dashed #333;
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+        }
+        ul.navup a:hover{
+            background-color: #333;
+            color: #f4f4f4;
+        }
+        #sidebar{
+            background-color: #bbb;
+            float: left;
+            width: 200px;
+            height: 765px;
+        }
+        ul.navside{
+            margin-left: 0px;
+            padding-left: 0px;
+            list-style: none;
+        }
+        .navside li {
+            display: inline;
+        }
+        ul.navside a {
+            display: inline-block;
+            width: 7em;
+            padding:10px;
+            background-color: #f4f4f4;
+            border-top: 1px dashed #333;
+            border-right: 1px dashed #333;
+            border-left: 5px solid #333;
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+        }
+        ul.navside a:hover{
+            background-color: #333;
+            color: #f4f4f4;
+        }
+        #main{
+            background-color: #fafafa;
+            height: 765px;
+            margin-right: 170px;
+        }
+        #footer{
+            background-color: #ccc;
+            height: 50px;
+        }
     </style>
 </head>
 <body>
-<a href="./Lab1.html" target="_blank">Лабораторна №1</a>
-<a href="./Lab2.html" target="_blank">Лабораторна №2</a>
-<a href="./Lab1.html" target="_blank">Лабораторна №3</a>
-<a href="./Lab1.html" target="_blank">Лабораторна №4</a>
-<a href="./Lab1.html" target="_blank">Лабораторна №5</a>
-<a href="./Lab1.html" target="_blank">Лабораторна №6</a>
+    <div id="header">Лабораторные</div>
+    <div id="upperbar">Место для лаб
+        <ul class="navup">
+            <li><a href="#">Лабораторна 1</a></li>
+            <li><a href="#">Лабораторна 2</a></li>
+            <li><a href="#">Лабораторна 3</a></li>
+            <li><a href="#">Лабораторна 4</a></li>
+            <li><a href="#">Лабораторна 5</a></li>
+            <li><a href="#">Лабораторна 6</a></li>
+            <li><a href="#">Лабораторна 7</a></li>
+            <li><a href="#">Лабораторна 8</a></li>
+        </ul>
+    </div>
+    <div id="sidebar">
+        <ul class="navside">
+            <li><a href="#">Вступ</a></li>
+            <li><a href="#">Код</a></li>
+            <li><a href="#">Висновок</a></li>
+        </ul>
+    </div>
+    <div id="main">Их содержимое</div>
+    <div id="footer">Дно</div>
 </body>
 </html>
