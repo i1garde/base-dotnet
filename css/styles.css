@@ -11,6 +11,6 @@ body {
     font-weight: 500;
 }
 
-.nav flex-column {
-
+.left-menu-list{
+    border: 1px solid green;
 }
