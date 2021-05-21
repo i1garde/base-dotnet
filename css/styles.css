@@ -14,3 +14,7 @@ body {
 .left-menu-list{
     border: 1px solid green;
 }
+
+.hidden{
+    display:none;
+}
